@@ -1,0 +1,26 @@
+import string
+
+input_string = ("Hello World")
+
+print(input_string.split())
+
+OUTPUT : ['Hello', 'World']
+
+
+
+input_string = ("Hello World")
+
+def example_func(input_string):
+  
+  import string
+
+  a = len(input_string.split())
+  
+  print(a)
+
+  return a
+
+example_func(input_string)
+
+OUTPUT : 2
+         2
