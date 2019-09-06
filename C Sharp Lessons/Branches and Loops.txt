@@ -1,0 +1,109 @@
+int a = 5;
+int b = 6;
+if (a + b > 10)
+    Console.WriteLine("The answer is greater than 10."); (11)
+
+int a = 5;
+int b = 3;
+if (a + b > 10)
+    Console.WriteLine("The answer is greater than 10."); (8)
+
+//Prints out if the answer is greater than 10 using an if statement to check
+//whether the sum of the first two variables a and b is above 10.
+//If the statement is false, nothing is printed.
+
+int a = 5;
+int b = 3;
+if (a + b > 10)
+{
+    Console.WriteLine("The answer is greater than 10");
+}
+else
+{
+    Console.WriteLine("The answer is not greater than 10");
+}
+
+//Prints out if the answer is greater than 10 using an if statement to check
+//whether the sum of the first two variables a and b is above 10.
+//If the statement is true, the first statement is printed, if not, the second
+//statement is printed. 
+//Brackets are used to separate different sections of the conditional if statments.
+
+int a = 5;
+int b = 3;
+int c = 4;
+if ((a + b + c > 10) && (a == b))
+{
+    Console.WriteLine("The answer is greater than 10");
+    Console.WriteLine("And the first number is equal to the second");
+}
+else
+{
+    Console.WriteLine("The answer is not greater than 10");
+    Console.WriteLine("Or the first number is not equal to the second");
+}
+
+//The && symbols represent and which creates an if statement with two conditions.
+//If both of these conditions are met, the code relying on these statements being true is activated.
+//Otherwise the else statement code is activated.
+
+int a = 5;
+int b = 3;
+int c = 4;
+if ((a + b + c > 10) || (a == b))
+{
+    Console.WriteLine("The answer is greater than 10");
+    Console.WriteLine("Or the first number is equal to the second");
+}
+else
+{
+    Console.WriteLine("The answer is not greater than 10");
+    Console.WriteLine("And the first number is not equal to the second");
+}
+
+//The || symbols represent or which creates an if statement with two conditions.
+//If either condition is true, the code relying on these statements being true is activated.
+//Otherwise the else statement code is activated.
+
+WHILE LOOP
+
+int counter = 0;
+while (counter < 10)
+{
+  Console.WriteLine($"Hello World! The counter is {counter}");
+  counter++;
+}
+
+DO WHILE LOOP
+
+int counter = 0;
+do
+{
+  Console.WriteLine($"Hello World! The counter is {counter}");
+  counter++;
+} while (counter < 10);
+
+FOR LOOP
+
+for(int counter = 0; counter < 10; counter++)
+{
+  Console.WriteLine($"Hello World! The counter is {counter}");
+}
+
+//Loops allow for bigger programs. They continuously run until a specific condition is met.
+//In this example, the condition is when the loop runs ten times.
+//The variable counter is printed and increases in value with every iteration of the loop.
+//The ++ after counter causes it to increase by one.
+
+int sum = 0;
+for (int number = 1; number < 21; number++)
+{
+  if (number % 3 == 0)
+  {
+    sum = sum + number;
+  }
+}
+Console.WriteLine($"The sum is {sum}");
+
+//Finds all numbers under 20 which are divisible by 3 without a remainder and then
+//prints them to the Console.

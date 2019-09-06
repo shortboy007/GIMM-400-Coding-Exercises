@@ -1,0 +1,106 @@
+int a = 18;
+int b = 6;
+int c = a + b;
+Console.WriteLine(c);
+
+//Declares three variables and then adds the first two variables a and b in the third
+//the result is then printed by calling variable c.
+
+int c = a + b; adds
+int c = a - b; subtracts
+int c = a * b; multiplies
+int c = a / b; divides
+
+int a = 5;
+int b = 4;
+int c = 2;
+int d = a + b * c;
+Console.WriteLine(d); (13)
+
+int a = 5;
+int b = 4;
+int c = 2;
+int d = (a + b) * c;
+Console.WriteLine(d); (18)
+
+//Prints out variable d as solution for the equation.
+//Multiplication is done first unless parentheses are used to specify order of operations.
+
+int d = (a + b) - 6 * c + (12 * 4) / 3 + 12; (25)
+
+//Multiple operations can be performed in one line of a variable.
+//Division always produces an integer result unless a decimal or double is used.
+
+int a = 7;
+int b = 4;
+int c = 3;
+int d = (a  + b) / c;
+int e = (a + b) % c;
+Console.WriteLine($"quotient: {d}");
+Console.WriteLine($"remainder: {e}");
+
+//Prints out d and e variables. The % operator shows the remainder of a division
+//equation.
+
+int max = int.MaxValue;
+int min = int.MinValue;
+Console.WriteLine($"The range of integers is {min} to {max}");
+
+//Prints the Maximum and Minimum value which an integer can be.
+
+int what = max + 3;
+Console.WriteLine($"An example of overflow: {what}");
+
+//Prints out variable what to show that when an int value reaches maximum or minimum
+//it wraps around starting at the opposite end of the value range. 
+//This is called underflow and or overflow depending on the end of the int range being met.
+
+double a = 5;
+double b = 4;
+double c = 2;
+double d = (a  + b) / c;
+Console.WriteLine(d); (4.5)
+
+double a = 19;
+double b = 23;
+double c = 8;
+double d = (a  + b) / c;
+Console.WriteLine(d); (5.25)
+
+//Prints out the variable d as a decimal
+
+double max = double.MaxValue;
+double min = double.MinValue;
+Console.WriteLine($"The range of double is {min} to {max}");
+
+//Prints the Maximum and Minimum value which a double can be.
+
+double third = 1.0 / 3.0;
+Console.WriteLine(third); (0.3333333->)
+
+//Prints out an infinitely repeating decimal approximation for one third.
+
+decimal min = decimal.MinValue;
+decimal max = decimal.MaxValue;
+Console.WriteLine($"The range of the decimal type is {min} to {max}");
+
+//Prints the Maximum and Minimum value which a decimal can be. More precise than a double.
+
+double a = 1.0;
+double b = 3.0;
+Console.WriteLine(a / b); (0.3333333->)
+
+decimal c = 1.0M;
+decimal d = 3.0M;
+Console.WriteLine(c / d); (0.333333333333->)
+
+//Decimals go to a lot more places than doubles meaning they are more precise.
+
+double r = 2.50;
+double pi = Math.PI;
+
+double circleArea = (r*r) * pi;
+
+Console.WriteLine(circleArea);
+
+//Prints out the area of a circle with a radius of 2.50. 

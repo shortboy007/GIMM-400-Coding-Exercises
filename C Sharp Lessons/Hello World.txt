@@ -1,0 +1,83 @@
+Console.WriteLine("Hello World!");
+
+//Prints Hello World to Console
+
+string aFriend = "Bill";
+Console.WriteLine(aFriend);
+
+aFriend = "Maira";
+Console.WriteLine(aFriend);
+
+//Declares a variable aFriend which has a string value of Bill or Maira
+//and then prints it to the console
+
+Console.WriteLine("Hello " + aFriend);
+
+//Prints the variable to the Console with a constant string in quotes
+//the two strings are added together with a +
+
+Console.WriteLine($"Hello {aFriend}");
+
+//Prints the variable to the console but the $ allows the variable to be placed within the quotes
+//the variable must have brackets to be recognized by the editor
+
+string firstFriend = "Maria";
+string secondFriend = "Sage";
+Console.WriteLine($"My friends are {firstFriend} and {secondFriend}");
+
+//Declares two string variables and prints them to the console 
+//with a $ and the variables within quotes and brackets
+
+Console.WriteLine($"The name {firstFriend} has {firstFriend.Length} letters.");
+Console.WriteLine($"The name {secondFriend} has {secondFriend.Length} letters.");
+
+//Prints the friend variables to the console and tells how many characters are in each variable
+
+string greeting = "      Hello World!       ";
+Console.WriteLine($"[{greeting}]");
+
+string trimmedGreeting = greeting.TrimStart();
+Console.WriteLine($"[{trimmedGreeting}]");
+
+trimmedGreeting = greeting.TrimEnd();
+Console.WriteLine($"[{trimmedGreeting}]");
+
+trimmedGreeting = greeting.Trim();
+Console.WriteLine($"[{trimmedGreeting}]");
+
+//Prints the first greeting as normal and then trims off extra space at the
+//beginning or end of the greeting variable. The last one trims off both space
+//at the beginning and end.
+
+string sayHello = "Hello World!";
+Console.WriteLine(sayHello);
+sayHello = sayHello.Replace("Hello", "Greetings");
+Console.WriteLine(sayHello);
+
+//Prints the variable sayHello normally and then uses the replace
+//method to replace the first word of the variable.
+
+Console.WriteLine(sayHello.ToUpper());
+Console.WriteLine(sayHello.ToLower());
+
+//Prints the variable and then changes all characters to uppercase, then lowecase.
+
+string songLyrics = "You say goodbye, and I say hello";
+Console.WriteLine(songLyrics.Contains("goodbye"));
+Console.WriteLine(songLyrics.Contains("greetings"));
+
+//Prints out the variable songLyrics and then checks to see if the string
+//contains a specific word string or combination of characters
+//returns true if the string is found and false if not found.
+
+string songLyrics = "You say goodbye, and I say hello";
+Console.WriteLine(songLyrics.StartsWith("You"));
+Console.WriteLine(songLyrics.EndsWith("hello"));
+
+//Prints out the variable and searches the beginning and end of the
+//entire string for the specified string
+
+
+
+
+
