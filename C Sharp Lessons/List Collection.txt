@@ -1,0 +1,77 @@
+var names = new List<string> { "Andrew", "Ana", "Felipe" };
+foreach (var name in names)
+{
+  Console.WriteLine($"Hello {name.ToUpper()}!");
+}
+
+//Sets up a list collection of data, then uses a for each loop to 
+//cycle through the string data within the brackets
+//and then prints the names as in all caps
+
+Console.WriteLine();
+names.Add("Maria");
+names.Add("Bill");
+names.Remove("Ana");
+foreach (var name in names)
+{
+  Console.WriteLine($"Hello {name.ToUpper()}!");
+}
+
+//Uses the add and remove functions to add Bill and Maria to the names list and remove ana.
+
+Console.WriteLine($"My name is {names[0]}.");
+Console.WriteLine($"I've added {names[2]} and {names[3]} to the list.");
+
+//This code uses [] to locate a specific name by its index starting with 0 as the first number.
+
+Console.WriteLine($"The list has {names.Count} people in it");
+
+//This code uses the .Count function to count how many names are in the list.
+
+var index = names.IndexOf("Felipe");
+if (index != -1)
+  Console.WriteLine($"The name {names[index]} is at index {index}");
+
+var notFound = names.IndexOf("Not Found");
+  Console.WriteLine($"When an item is not found, IndexOf returns {notFound}");
+
+//This code searches the list for the location of the name Felipe and returns the 
+//index location of this name
+
+names.Sort();
+foreach (var name in names)
+{
+  Console.WriteLine($"Hello {name.ToUpper()}!");
+}
+
+//This code uses the sort function to sort the names in alphabetical order
+
+var fibonacciNumbers = new List<int> {1, 1};
+
+var previous = fibonacciNumbers[fibonacciNumbers.Count - 1];
+var previous2 = fibonacciNumbers[fibonacciNumbers.Count - 2];
+
+fibonacciNumbers.Add(previous + previous2);
+
+foreach(var item in fibonacciNumbers)
+    Console.WriteLine(item);
+
+//Creates a list of integers between the range of the first and second numbers
+//the list is then printed by adding the numbers and their previous numbers
+//added together to the list
+
+var fibonacciNumbers = new List<int> {1, 1};
+
+while (fibonacciNumbers.Count < 20)
+{
+    var previous = fibonacciNumbers[fibonacciNumbers.Count - 1];
+    var previous2 = fibonacciNumbers[fibonacciNumbers.Count - 2];
+
+    fibonacciNumbers.Add(previous + previous2);
+}
+foreach(var item in fibonacciNumbers)
+    Console.WriteLine(item);
+}
+
+//This code uses a while loop to iterate through the function 20 times
+
